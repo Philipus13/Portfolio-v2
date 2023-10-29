@@ -93,45 +93,7 @@ img {
   background-color: var(--first-color);
 }
 
-.portfolio-details_img1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  
-}
-.portfolio_details_img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
 
-}
-
-.portfolio-details_title1 {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  color: black;
-  font-size: 18px; 
-}
-
-.portfolio-details_title2 {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  color: black;
-  font-size: 24px; 
-}
-.portfolio-details_description2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: black;
-  font-size: 18px; 
-  text-indent: 1.5em;
-
-}
 
 .section {
   padding-top: 3rem;
@@ -595,6 +557,46 @@ img {
 
 
 /* ================ The Timeline ================ */
+
+.portfolio-details_img1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.portfolio_details_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.portfolio-details_title1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: black;
+  font-size: 18px; 
+}
+
+.portfolio-details_title2 {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  color: black;
+  font-size: 24px; 
+}
+.portfolio-details_description2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 18px; 
+  text-indent: 1.5em;
+
+}
 
 .timeline {
   position: relative;
