@@ -11,9 +11,23 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     /> -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Philipus Silaen Portfolio</title>
+
+    <script>
+   function openPortfolio(imageSrc, title, description) {
+        sessionStorage.setItem('portfolioImage', imageSrc);
+        sessionStorage.setItem('portfolioTitle', title);
+        sessionStorage.setItem('portfolioDescription', description);
+        window.location.href = 'portfolio.html';
+      }
+
+     
+    </script>
   </head>
   <body>
     <!--===== HEADER =====-->
@@ -67,13 +81,13 @@
         </div>
 
         <div class="home__social">
-          <a href="" class="home__social-icon"
+          <a href="https://www.linkedin.com/in/philipus-silaen-2305121b4/" class="home__social-icon"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="" class="home__social-icon"
+          <!-- <a href="" class="home__social-icon"
             ><i class="bx bxl-behance"></i
-          ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          ></a> -->
+          <a href="https://github.com/Philipus13" class="home__social-icon"><i class="bx bxl-github"></i></a>
         </div>
 
         <div class="home__img">
@@ -146,7 +160,11 @@
           <div>
             <h2 class="skills__subtitle">Profesional Skills</h2>
             <p class="skills__text">
-                I specialize in creating top-notch mobile applications to meet business requirements. Additionally, I excel in developing backends and websites. With a keen eye for quality, adaptability to new tech and a passion for outstanding results, I am an asset to any team. Proficiency ratings:
+              I specialize in creating top-notch mobile applications to meet
+              business requirements. Additionally, I excel in developing
+              backends and websites. With a keen eye for quality, adaptability
+              to new tech and a passion for outstanding results, I am an asset
+              to any team. Proficiency ratings:
             </p>
             <div class="skills__data">
               <div class="skills__names">
@@ -211,9 +229,11 @@
                   >
                 </div>
                 <div class="desc">
-                  Senior Software Engineer: I create and maintain mobile apps of company (beauty wellness apps) using flutter for both platform android and ios.
+                  Senior Software Engineer: I create and maintain mobile apps of
+                  company (beauty wellness apps) using flutter for both platform
+                  android and ios.
                 </div>
-              </div>
+              </div> 
             </li>
 
             <!-- Item 2 -->
@@ -226,7 +246,9 @@
                   >
                 </div>
                 <div class="desc">
-                  Senior Software Engineer: I Create and maintain mobile apps of company (beauty wellness apps) using flutter for both platform android and ios.
+                  Senior Software Engineer: I Create and maintain mobile apps of
+                  company (beauty wellness apps) using flutter for both platform
+                  android and ios.
                 </div>
               </div>
             </li>
@@ -241,7 +263,10 @@
                   >
                 </div>
                 <div class="desc">
-                  Lead Software Engineer: Lead a tech team that consist of 8 member to deliver business requirement that business want into our apps be it frontend or backend. Work closely with product manager, designer, QA and even management.
+                  Lead Software Engineer: Lead a tech team that consist of 8
+                  member to deliver business requirement that business want into
+                  our apps be it frontend or backend. Work closely with product
+                  manager, designer, QA and even management.
                 </div>
               </div>
             </li>
@@ -255,7 +280,10 @@
                   >
                 </div>
                 <div class="desc">
-                  Assistant Lecturer: Help lecturer of MPPI course in Magister Teknologi Informasi study program. The task include guide the postgraduate student for each task given to them and assess their works.
+                  Assistant Lecturer: Help lecturer of MPPI course in Magister
+                  Teknologi Informasi study program. The task include guide the
+                  postgraduate student for each task given to them and assess
+                  their works.
                 </div>
               </div>
             </li>
@@ -269,7 +297,8 @@
                   >
                 </div>
                 <div class="desc">
-                  MASTER DEGREE Universitas Indonesia: Magister Teknologi Informasi
+                  MASTER DEGREE Universitas Indonesia: Magister Teknologi
+                  Informasi
                 </div>
               </div>
             </li>
@@ -283,7 +312,9 @@
                   >
                 </div>
                 <div class="desc">
-                  Mobile Lead Developer: Lead a mobile team to deliver business requirement that business want into mobile apps. Work closely with product manager, designer, backend and even management.
+                  Mobile Lead Developer: Lead a mobile team to deliver business
+                  requirement that business want into mobile apps. Work closely
+                  with product manager, designer, backend and even management.
                 </div>
               </div>
             </li>
@@ -297,7 +328,9 @@
                   >
                 </div>
                 <div class="desc">
-                  Senior Mobile Developer: Create and maintain mobile apps (android and IOS).</div>
+                  Senior Mobile Developer: Create and maintain mobile apps
+                  (android and IOS).
+                </div>
               </div>
             </li>
             <!-- Item 8 -->
@@ -309,7 +342,10 @@
                     ><span class="time">2016 - 2017</span></span
                   >
                 </div>
-                <div class="desc"> Fullstack programmer: Create and maintain Website, API, Mobile apps, and Database for many company apps.</div>
+                <div class="desc">
+                  Fullstack programmer: Create and maintain Website, API, Mobile
+                  apps, and Database for many company apps.
+                </div>
               </div>
             </li>
             <!-- Item 9 -->
@@ -321,7 +357,10 @@
                     ><span class="time">2012 - 2016</span></span
                   >
                 </div>
-                <div class="desc">BACHELORES DEGREE Politeknik Negeri Jakarta: Information Technology</div>
+                <div class="desc">
+                  BACHELORES DEGREE Politeknik Negeri Jakarta: Information
+                  Technology
+                </div>
               </div>
             </li>
           </ul>
@@ -333,35 +372,110 @@
         <h2 class="section-title">Portfolio</h2>
 
         <div class="work__container bd-grid">
-          <a href="" class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
+
+          <div class="portfolio-details_img1">
+            <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/sehatpedia_screen.png', 'Sehatpedia App', 'The Sehatpedia application is an application developed by PT Jejaring Tiga Artha for the Ministry of Health. This application was developed using the flutter framework with the Dart programming language for running on iOS or Android platform. This application is useful for users as a means of consultation with doctors, as a support for health information services and as an effort to increase public access to health services, with the aim of serving the community to provide health information, disease, and information on health service facilities appropriately and for free. This application can be downloaded at the following link:')"
+          >
+            <img src="assets/img/sehatpedia_screen.png" alt="Portfolio 1" />
+            <h2 class="portfolio-details_title1" id="portfolio-title">Sehatpedia App</h2>
+
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work2.jpg" alt="" />
+          </div>
+     
+          <!-- <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/work1.jpg', 'Portfolio 1', 'Description of Portfolio 1')"
+          >
+            <img src="assets/img/sehatpedia_screen.png" alt="Portfolio 1" />
+          </a> -->
+         
+          <div class="portfolio-details_img1">
+            <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/zicare_screen.png', 'Zi.Care App', 'The Sehatpedia application is an application developed by PT Jejaring Tiga Artha for the Ministry of Health. This application was developed using the flutter framework with the Dart programming language for running on iOS or Android platform. This application is useful for users as a means of consultation with doctors, as a support for health information services and as an effort to increase public access to health services, with the aim of serving the community to provide health information, disease, and information on health service facilities appropriately and for free. This application can be downloaded at the following link:')"
+          >
+            <img src="assets/img/zicare_screen.png" alt="Portfolio 2" />
+            <h2 class="portfolio-details_title1" id="portfolio-title">Zi.Care App</h2>
+
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
+          </div>
+          <div class="portfolio-details_img1">
+            <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/popbox_screen.png', 'Popbox App', 'The Sehatpedia application is an application developed by PT Jejaring Tiga Artha for the Ministry of Health. This application was developed using the flutter framework with the Dart programming language for running on iOS or Android platform. This application is useful for users as a means of consultation with doctors, as a support for health information services and as an effort to increase public access to health services, with the aim of serving the community to provide health information, disease, and information on health service facilities appropriately and for free. This application can be downloaded at the following link:')"
+          >
+            <img src="assets/img/popbox_screen.png" alt="Portfolio 2" />
+            <h2 class="portfolio-details_title1" id="portfolio-title">Popbox App</h2>
+
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
+          </div>
+
+
+       
+          <div class="portfolio-details_img1">
+            <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/popwarung_screen.png', 'PopWarung App', 'The Sehatpedia application is an application developed by PT Jejaring Tiga Artha for the Ministry of Health. This application was developed using the flutter framework with the Dart programming language for running on iOS or Android platform. This application is useful for users as a means of consultation with doctors, as a support for health information services and as an effort to increase public access to health services, with the aim of serving the community to provide health information, disease, and information on health service facilities appropriately and for free. This application can be downloaded at the following link:')"
+          >
+            <img src="assets/img/popwarung_screen.png" alt="Portfolio 2" />
+            <h2 class="portfolio-details_title1" id="portfolio-title">PopWarung App</h2>
+
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
+          </div>
+          <div class="portfolio-details_img1">
+            <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/popboxpod_screen.png', 'Popbox POD App', 'The Sehatpedia application is an application developed by PT Jejaring Tiga Artha for the Ministry of Health. This application was developed using the flutter framework with the Dart programming language for running on iOS or Android platform. This application is useful for users as a means of consultation with doctors, as a support for health information services and as an effort to increase public access to health services, with the aim of serving the community to provide health information, disease, and information on health service facilities appropriately and for free. This application can be downloaded at the following link:')"
+          >
+            <img src="assets/img/popboxpod_screen.png" alt="Popbox POD App" />
+            <h2 class="portfolio-details_title1" id="portfolio-title">Popbox POD App</h2>
+
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
+          </div>
+          <div class="portfolio-details_img1">
+            <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/saphire_screen.png', 'Saphire POD App', 'The Sehatpedia application is an application developed by PT Jejaring Tiga Artha for the Ministry of Health. This application was developed using the flutter framework with the Dart programming language for running on iOS or Android platform. This application is useful for users as a means of consultation with doctors, as a support for health information services and as an effort to increase public access to health services, with the aim of serving the community to provide health information, disease, and information on health service facilities appropriately and for free. This application can be downloaded at the following link:')"
+          >
+            <img src="assets/img/saphire_screen.png" alt="Saphire App" />
+            <h2 class="portfolio-details_title1" id="portfolio-title">Saphire App</h2>
+
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
+          </div>
+          <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/work7.jpg', 'Portfolio 7', 'Description of Portfolio 7')"
+          >
+            <img src="assets/img/work6.jpg" alt="Portfolio 7" />
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
+          <!-- <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/work8.jpg', 'Portfolio 8', 'Description of Portfolio 8')"
+          >
+            <img src="assets/img/work6.jpg" alt="Portfolio 8" />
           </a>
-          <a href="" class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
-          </a>
+          <a
+            href="#"
+            class="work__img"
+            onclick="openPortfolio('assets/img/work9.jpg', 'Portfolio 9', 'Description of Portfolio 9')"
+          >
+            <img src="assets/img/work6.jpg" alt="Portfolio 9" />
+          </a> -->
         </div>
       </section>
+
+    
 
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
@@ -410,7 +524,7 @@
         "Software Engineer",
         "Mobile Engineer",
         "Backend Engineer",
-        "Lecturer"
+        "Lecturer",
       ];
       let currentWordIndex = 0;
 
